@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #0056b3; /* Red */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+    transform: scale(1.1);
+}
+
+/* Washing Points Section */
+.points {
+    padding: 60px 20px;
+    background: white;
+}
+
+.points .container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.points h1 {
+    font-size: 36px;
+    color: #b20000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.points-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.point-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.point-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.point-card h2 {
+    font-size: 22px;
+    color: #b20000;
+    margin-bottom: 10px;
+}
+
+.point-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.point-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.point-card ul li {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #b20000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul li {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #b20000;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    margin: 0 8px;
+    display: inline-block;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #b20000;
+    transform: scale(1.2);
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}

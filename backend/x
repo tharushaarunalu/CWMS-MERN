@@ -1,0 +1,27 @@
+cwms/
+├── /models                # MongoDB models
+│   ├── Booking.js         # Schema for booking data
+│   ├── WashingPlan.js     # Schema for washing plans
+│   └── Contact.js         # Schema for contact form submissions
+├── /routes                # Application routes
+│   ├── index.js           # Routes for homepage
+│   ├── about.js           # About page route
+│   ├── contact.js         # Contact form route
+│   ├── plans.js           # Washing plans route
+│   ├── location.js        # Locations route
+│   └── adminRoutes.js     # Admin-related routes
+├── /views                 # EJS templates
+│   ├── index.ejs          # Homepage
+│   ├── about.ejs          # About page
+│   ├── contact.ejs        # Contact page
+│   ├── plans.ejs          # Washing plans
+│   ├── location.ejs       # Locations page
+│   ├── adminDashboard.ejs # Admin dashboard
+│   └── includes           # Header, footer, etc.
+│       ├── header.ejs
+│       ├── footer.ejs
+│       └── sidebar.ejs
+├── /public                # Static files (CSS, JS, Images)
+├── app.js                 # Main server file
+├── package.json           # Dependencies and scripts
+└── README.md              # Documentation

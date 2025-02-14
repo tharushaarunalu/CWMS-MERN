@@ -1,0 +1,308 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Navbar Styles */
+header {
+  background: #1e3751;
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+header:hover {
+  background-color: #0056b3;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header .logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  margin: 0 10px;
+}
+
+header ul li a {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Mobile Nav */
+header .menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header ul {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background: #007bff;
+  }
+
+  header ul.active {
+    display: flex;
+  }
+
+  header ul li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  header .menu-toggle {
+    display: block;
+  }
+}
+
+/* Add Washing Point Section */
+.add-washingpoint {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f9f9f9, #e6e6e6);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.add-washingpoint h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+  animation: slideInFromTop 1s ease-in-out;
+}
+
+.add-washingpoint .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.add-washingpoint label {
+  font-weight: bold;
+  color: #555;
+}
+
+.add-washingpoint input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-washingpoint input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.add-washingpoint button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.add-washingpoint button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  background: #eaf4ff;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #0056b3;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: slideInFromRight 1.5s ease-in-out;
+}
+
+.contact label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.contact button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-washingpoint,
+  .contact {
+    padding: 20px;
+  }
+
+  .add-washingpoint h1,
+  .contact h1 {
+    font-size: 2em;
+  }
+
+  .contact form {
+    gap: 10px;
+  }
+}
